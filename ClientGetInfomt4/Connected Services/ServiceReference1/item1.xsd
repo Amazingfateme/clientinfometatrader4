@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://tempuri.org/" elementFormDefault="qualified" targetNamespace="http://tempuri.org/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://localhost:8733/Design_Time_Addresses/WcfGetInfoMt4/Service1/?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/System" />
+  <xs:element name="ConnectServer">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="botName" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="IsConnect" type="xs:boolean" />
+        <xs:element minOccurs="0" name="DateTime" type="xs:dateTime" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ConnectServerResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SystemRestart">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="botName" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="IsConnect" type="xs:boolean" />
+        <xs:element minOccurs="0" name="DateTime" type="xs:dateTime" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SystemRestartResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="BotStart">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="botName" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="IsConnect" type="xs:boolean" />
+        <xs:element minOccurs="0" name="DateTime" type="xs:dateTime" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="BotStartResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="BotStop">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="botName" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="IsConnect" type="xs:boolean" />
+        <xs:element minOccurs="0" name="DateTime" type="xs:dateTime" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="BotStopResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="IntropInternet">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="botName" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="IsConnect" type="xs:boolean" />
+        <xs:element minOccurs="0" name="DateTime" type="xs:dateTime" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="IntropInternetResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ServerException">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="botName" nillable="true" type="xs:string" />
+        <xs:element xmlns:q1="http://schemas.datacontract.org/2004/07/System" minOccurs="0" name="Ex" nillable="true" type="q1:Exception" />
+        <xs:element minOccurs="0" name="DateTime" type="xs:dateTime" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ServerExceptionResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ServiceStart">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="botName" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="ServiceStart" type="xs:boolean" />
+        <xs:element minOccurs="0" name="DateTime" type="xs:dateTime" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ServiceStartResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ServiceStop">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="botName" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="ServiceStop" type="xs:boolean" />
+        <xs:element minOccurs="0" name="DateTime" type="xs:dateTime" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ServiceStopResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="BidAsk">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="botName" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="Symbol" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="Bid" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="Ask" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="BidAskResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SymbolBidAsk">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="botName" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="Action" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="Ticket" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SymbolBidAskResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Exceptionmessage">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="botName" nillable="true" type="xs:string" />
+        <xs:element xmlns:q2="http://schemas.datacontract.org/2004/07/System" minOccurs="0" name="Ex" nillable="true" type="q2:Exception" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ExceptionmessageResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

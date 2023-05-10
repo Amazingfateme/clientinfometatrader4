@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:tns="http://tempuri.org/" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" name="Service1" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://localhost:8733/Design_Time_Addresses/WcfGetInfoMt4/Service1/?xsd=xsd0" namespace="http://tempuri.org/" />
+      <xsd:import schemaLocation="http://localhost:8733/Design_Time_Addresses/WcfGetInfoMt4/Service1/?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://localhost:8733/Design_Time_Addresses/WcfGetInfoMt4/Service1/?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/System" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="IService1_ConnectServer_InputMessage">
+    <wsdl:part name="parameters" element="tns:ConnectServer" />
+  </wsdl:message>
+  <wsdl:message name="IService1_ConnectServer_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ConnectServerResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_SystemRestart_InputMessage">
+    <wsdl:part name="parameters" element="tns:SystemRestart" />
+  </wsdl:message>
+  <wsdl:message name="IService1_SystemRestart_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SystemRestartResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_BotStart_InputMessage">
+    <wsdl:part name="parameters" element="tns:BotStart" />
+  </wsdl:message>
+  <wsdl:message name="IService1_BotStart_OutputMessage">
+    <wsdl:part name="parameters" element="tns:BotStartResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_BotStop_InputMessage">
+    <wsdl:part name="parameters" element="tns:BotStop" />
+  </wsdl:message>
+  <wsdl:message name="IService1_BotStop_OutputMessage">
+    <wsdl:part name="parameters" element="tns:BotStopResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_IntropInternet_InputMessage">
+    <wsdl:part name="parameters" element="tns:IntropInternet" />
+  </wsdl:message>
+  <wsdl:message name="IService1_IntropInternet_OutputMessage">
+    <wsdl:part name="parameters" element="tns:IntropInternetResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_ServerException_InputMessage">
+    <wsdl:part name="parameters" element="tns:ServerException" />
+  </wsdl:message>
+  <wsdl:message name="IService1_ServerException_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ServerExceptionResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_ServiceStart_InputMessage">
+    <wsdl:part name="parameters" element="tns:ServiceStart" />
+  </wsdl:message>
+  <wsdl:message name="IService1_ServiceStart_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ServiceStartResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_ServiceStop_InputMessage">
+    <wsdl:part name="parameters" element="tns:ServiceStop" />
+  </wsdl:message>
+  <wsdl:message name="IService1_ServiceStop_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ServiceStopResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_BidAsk_InputMessage">
+    <wsdl:part name="parameters" element="tns:BidAsk" />
+  </wsdl:message>
+  <wsdl:message name="IService1_BidAsk_OutputMessage">
+    <wsdl:part name="parameters" element="tns:BidAskResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_SymbolBidAsk_InputMessage">
+    <wsdl:part name="parameters" element="tns:SymbolBidAsk" />
+  </wsdl:message>
+  <wsdl:message name="IService1_SymbolBidAsk_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SymbolBidAskResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_Exceptionmessage_InputMessage">
+    <wsdl:part name="parameters" element="tns:Exceptionmessage" />
+  </wsdl:message>
+  <wsdl:message name="IService1_Exceptionmessage_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ExceptionmessageResponse" />
+  </wsdl:message>
+  <wsdl:portType name="IService1">
+    <wsdl:operation name="ConnectServer">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/ConnectServer" message="tns:IService1_ConnectServer_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/ConnectServerResponse" message="tns:IService1_ConnectServer_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SystemRestart">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/SystemRestart" message="tns:IService1_SystemRestart_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/SystemRestartResponse" message="tns:IService1_SystemRestart_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="BotStart">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/BotStart" message="tns:IService1_BotStart_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/BotStartResponse" message="tns:IService1_BotStart_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="BotStop">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/BotStop" message="tns:IService1_BotStop_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/BotStopResponse" message="tns:IService1_BotStop_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="IntropInternet">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/IntropInternet" message="tns:IService1_IntropInternet_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/IntropInternetResponse" message="tns:IService1_IntropInternet_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ServerException">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/ServerException" message="tns:IService1_ServerException_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/ServerExceptionResponse" message="tns:IService1_ServerException_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ServiceStart">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/ServiceStart" message="tns:IService1_ServiceStart_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/ServiceStartResponse" message="tns:IService1_ServiceStart_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ServiceStop">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/ServiceStop" message="tns:IService1_ServiceStop_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/ServiceStopResponse" message="tns:IService1_ServiceStop_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="BidAsk">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/BidAsk" message="tns:IService1_BidAsk_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/BidAskResponse" message="tns:IService1_BidAsk_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SymbolBidAsk">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/SymbolBidAsk" message="tns:IService1_SymbolBidAsk_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/SymbolBidAskResponse" message="tns:IService1_SymbolBidAsk_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Exceptionmessage">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/Exceptionmessage" message="tns:IService1_Exceptionmessage_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/ExceptionmessageResponse" message="tns:IService1_Exceptionmessage_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BasicHttpBinding_IService1" type="tns:IService1">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="ConnectServer">
+      <soap:operation soapAction="http://tempuri.org/IService1/ConnectServer" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SystemRestart">
+      <soap:operation soapAction="http://tempuri.org/IService1/SystemRestart" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="BotStart">
+      <soap:operation soapAction="http://tempuri.org/IService1/BotStart" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="BotStop">
+      <soap:operation soapAction="http://tempuri.org/IService1/BotStop" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="IntropInternet">
+      <soap:operation soapAction="http://tempuri.org/IService1/IntropInternet" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ServerException">
+      <soap:operation soapAction="http://tempuri.org/IService1/ServerException" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ServiceStart">
+      <soap:operation soapAction="http://tempuri.org/IService1/ServiceStart" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ServiceStop">
+      <soap:operation soapAction="http://tempuri.org/IService1/ServiceStop" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="BidAsk">
+      <soap:operation soapAction="http://tempuri.org/IService1/BidAsk" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SymbolBidAsk">
+      <soap:operation soapAction="http://tempuri.org/IService1/SymbolBidAsk" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Exceptionmessage">
+      <soap:operation soapAction="http://tempuri.org/IService1/Exceptionmessage" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="Service1">
+    <wsdl:port name="BasicHttpBinding_IService1" binding="tns:BasicHttpBinding_IService1">
+      <soap:address location="http://localhost:8733/Design_Time_Addresses/WcfGetInfoMt4/Service1/" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>
